@@ -1,0 +1,42 @@
+body {
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  background-color: cornsilk;
+}
+
+p {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+#radio {
+  font-weight: normal;
+}
+
+#check {
+  font-weight: normal;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+input[type=text] {
+  border: 2px solid;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+input[type=text]:focus {
+  background-color: DeepSkyBlue;
+  border-color: white;
+  color: white;
+}
+
+input[type=submit] {
+  background-color: DeepSkyBlue;
+  color: white;
+  border: none;
+  padding: 1em;
+
+}

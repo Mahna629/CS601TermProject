@@ -1,0 +1,104 @@
+body {
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  background-color: cornsilk;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+nav {
+  float: left;
+  background-color: LightSkyBlue;
+  border-style: solid;
+  color: black;
+  border-color: black;
+  margin-left: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 300px;
+}
+
+aside {
+  border-style: solid;
+  border-color: black;
+  clear: left;
+  float: left;
+  margin-left: 4em;
+  text-align: center;
+}
+
+#me {
+  margin-top: 2em;
+}
+
+#FP {
+  transform: scale(.7);
+  margin-left: -3.5em;
+  margin-top: -24em;
+}
+
+#IC {
+  transform: scale(.7);
+  margin-left: -3.5em;
+  margin-top: -6em;
+}
+
+#chaya {
+  transform: scale(.9);
+  margin-left: 1em;
+  margin-top: -26em;
+  border-style: hidden;
+}
+
+#song {
+  margin-left: 2.5em;
+  border-style: hidden;
+  margin-top: -2em;
+}
+
+section {
+  clear: right;
+  float: right;
+  width: 78%;
+  border-style: solid;
+  border-left: hidden;
+  border-bottom: hidden;
+  border-right: hidden;
+  border-width: thick;
+}
+
+table, th, td {
+  border-style: groove;
+}
+
+table {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+td {
+  text-align: center;
+}
+
+caption {
+  font-weight: bold;
+}
+
+a:link {
+  color: goldenrod;
+}
+
+a:visited {
+  color: MediumVioletRed;
+}
+
+a:hover {
+  color: Crimson;
+  font-weight: bold;
+}

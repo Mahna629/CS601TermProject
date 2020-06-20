@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Michael Bruno | Term Project | Contact</title>
+  <meta name="description" content="Michael Bruno's CS601 Term Project">
+  <meta name="keywords" content="Michael, Bruno, CS601, Term, Project">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="tpStyle.css">
+  <script src="tpJavascript.js"></script>
+</head>
+
+<header>
+  <nav>
+    <ul id="nav">
+      <li id="navList"><a href="index.html">Home</a></li>
+      <li id="navList"><a href="tpBio.html">Bio</a></li>
+      <li id="navList"><a href="tpProjects.html">Projects</a></li>
+      <li id="navList"><a href="tpInterests.html">Interests</a></li>
+      <li id="navList"><a href="tpGallery.html">Gallery</a></li>
+      <li id="navList"><a href="tpResume.html">Resume</a></li>
+      <li id="navList"><a href="tpContact.html" a class = "active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+  <section id="contTitle">
+    <h1>Leave me a message!</h1>
+  </section>
+
+  <section class="formContainer">
+    <form action="contactInfo.php" method="post" novalidate onsubmit="return formValidation();">
+
+      <p class="formLabels">Please enter your first name: (Required)</p> <span id="fNError"></span>
+      <input type="text" id="fname" name="firstname" placeholder="Your first name..." required>
+
+      <p class="formLabels">Please enter your last name: (Required)</p>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..." required>
+
+      <p class="formLabels">What is your message: </p>
+      <textarea id="additional" name="additional" placeholder="I think you're really cool..." style="height:200px"></textarea>
+
+      <p>
+        <input type=submit value="Submit">
+      </p>
+    </form>
+  </section>
+
+
+</body>

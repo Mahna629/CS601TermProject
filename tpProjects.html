@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Michael Bruno | Term Project | Projects</title>
+  <meta name="description" content="Michael Bruno's CS601 Term Project">
+  <meta name="keywords" content="Michael, Bruno, CS601, Term, Project">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="tpStyle.css">
+  <script src="tpJavascript.js"></script>
+</head>
+
+<header>
+  <nav>
+    <ul id="nav">
+      <li id="navList"><a href="index.html">Home</a></li>
+      <li id="navList"><a href="tpBio.html">Bio</a></li>
+      <li id="navList"><a href="tpProjects.html" a class = "active">Projects</a></li>
+      <li id="navList"><a href="tpInterests.html">Interests</a></li>
+      <li id="navList"><a href="tpGallery.html">Gallery</a></li>
+      <li id="navList"><a href="tpResume.html">Resume</a></li>
+      <li id="navList"><a href="tpContact.html" >Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+  <section id="webProjCont">
+    <section id="projects">
+      <h1>CS601 Web Application Development Projects</h1>
+      <p>Here are the projects I have worked on during this course!</p>
+    </section>
+
+    <section id="projectLinks">
+      <button id="prjButton" type="button" class="collapsible" >Module 1: HTML</button>
+        <section class="content">
+          <p>Project made for CS601 Module 1, focusing on an introduction to HTML.</p>
+          <button id="innerButton" type="button" onclick="location.href='Modules/Module 1/home.html'">View Project</button>
+        </section>
+      <button id="prjButton" type="button" class="collapsible" >Module 2: CSS</button>
+        <section class="content">
+          <p>Project made for CS601 Module 2, focusing on an introduction to CSS.</p>
+          <button id="innerButton" type="button" onclick="location.href='Modules/Module 2/home.html'">View Project</button>
+        </section>
+      <button id="prjButton" type="button" class="collapsible" >Module 3: JavaScript</button>
+        <section class="content">
+          <p>Project made for CS601 Module 3, focusing on an introduction to JavaScript.</p>
+          <button id="innerButton" type="button" onclick="location.href='Modules/Module 3/module3.html'">View Project</button>
+        </section>
+      <button id="prjButton" type="button" class="collapsible" >Module 4: The Document Object Model</button>
+        <section class="content">
+          <p>Project made for CS601 Module 4, focusing on the Document Object Model.</p>
+          <button id="innerButton" type="button" onclick="location.href='Modules/Module 4/mod4home.html'">View Project</button>
+        </section>
+      <button id="prjButton" type="button" class="collapsible" >Module 5: Advanced JavaScript and AJAX</button>
+        <section class="content">
+          <p>Project made for CS601 Module 5, focusing on an advanced JavaScript and AJAX.</p>
+          <button id="innerButton" type="button" onclick="location.href='Modules/Module 5/mod5home.html'">View Project</button>
+        </section>
+      <button id="prjButton" type="button" class="collapsible" >Module 6: Vue.JS and JQuery</button>
+        <section class="content">
+          <p>Project made for CS601 Module 2, focusing on Vue.JS and JQuery.</p>
+          <button id="innerButton" type="button" onclick="location.href='Modules/Module 6/mod6home.html'">View Project</button>
+        </section>
+    </section>
+  </section>
+
+  <section id="miscProj">
+    <section id="miscProjects">
+      <h1>Writing</h1>
+      <p>A collection of writtings I did in my undergrad.</p>
+    </section>
+
+    <section id="miscProjLinks">
+      <button id="prjButtonMisc" type="button" class="collapsible">And Then There Was Silence</button>
+        <section class="contentMisc">
+          <p>Feature-length fantasy screenplay inspired by the Iliad and the fall of Troy. Written in 2014.</p>
+          <button id="innerButton" type="button" onclick="location.href='Content/AND THEN THERE WAS SILENCE-FINAL DRAFT.pdf'">Read</button>
+        </section>
+      <button id="prjButtonMisc" type="button" class="collapsible">Children of the Ruin</button>
+        <section class="contentMisc">
+          <p>Feature-length fantasy political thriller screenplay. Written in 2015.</p>
+          <button id="innerButton" type="button" onclick="location.href='Content/COTR.pdf'">Read</button>
+        </section>
+      <button id="prjButtonMisc" type="button" class="collapsible">Illuminations on the Eight</button>
+        <section class="contentMisc">
+          <p>Short fantasy story about the founding of a religion. Written in 2014.</p>
+          <button id="innerButton" type="button" onclick="location.href='Content/Illuminations on the Eight.pdf'">Read</button>
+        </section>
+      <button id="prjButtonMisc" type="button" class="collapsible">2 Mortys to Midnight</button>
+        <section class="contentMisc">
+          <p>TV spec script for an episode of Rick and Morty. Written in 2015.</p>
+          <button id="innerButton" type="button" onclick="location.href='Content/RICK AND MORTY 2 Mortys to Midnight.pdf'">Read</button>
+        </section>
+      <button id="prjButtonMisc" type="button" class="collapsible">The Seventh Duel</button>
+        <section class="contentMisc">
+          <p>Short fantasy story about two swordsmen and their fateful seventh duel. Written in 2015.</p>
+          <button id="innerButton" type="button" onclick="location.href='Content/The Seventh Duel.pdf'">Read</button>
+        </section>
+      <button id="prjButtonMisc" type="button" class="collapsible">T.U.N.E.</button>
+        <section class="contentMisc">
+          <p>Feature-length sci-fi screenplay about the uploading of memories to a computer. Written in 2016 as my thesis.</p>
+          <button id="innerButton" type="button" onclick="location.href='Content/TUNE - FINAL DRAFT.pdf'">Read</button>
+        </section>
+      </section>
+
+    </section>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+
+
+
+</body>

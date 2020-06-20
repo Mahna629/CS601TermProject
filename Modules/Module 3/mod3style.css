@@ -1,0 +1,18 @@
+button {
+  background-color: white;
+  font-size: 6em;
+  border: 2px solid DeepSkyBlue;
+  color: black;
+  text-align: center;
+  padding: 15px 32px;
+  border-radius: 8px;
+  transition-duration: .4s;
+  margin: 0 auto;
+  margin-top: 4em;
+  display: block;
+}
+
+button:hover {
+  background-color: DeepSkyBlue;
+  color: white;
+}

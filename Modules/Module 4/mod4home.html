@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Michael Bruno | Module 4</title>
+  <meta name="description" content="Module 4: Form Validation and Submission">
+  <meta name="keywords" content="Michael, Bruno, CS601, Module 4, Form, Validation, Submission">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="mod4stylesheet.css">
+  <script src="mod4javascript.js"></script>
+</head>
+
+<body>
+  <form name="firstNameForm" action="http://bucs601.com/submit.php" method="post" novalidate onsubmit="return formValidation();">
+    <p>Please enter your first name (required):
+      <input type="text" name="firstName" id="firstName" required>
+    </p>
+
+    <p>Please enter your last name (required):
+      <input type="text" name="lastName" id="lastName" required>
+    </p>
+
+    <p>Please enter your facilitator's first name (required):
+      <input type="text" name="facilitator" id="facilitator" required>
+    </p>
+
+    <p>What is your favorite season?</p>
+
+    <p id="radio">
+      <input type="radio" name="radioMessageType" value="spring" checked>Spring <br/>
+      <input type="radio" name="radioMessageType" value="summer">Summer <br/>
+      <input type="radio" name="radioMessageType" value="fall">Fall <br/>
+      <input type="radio" name="radioMessageType" value="winter">Winter <br/>
+    </p>
+
+    <p>What fruits do you like?</p>
+
+    <p id="check">
+      <input type="checkbox" name="apple" value="Apple">Apples <br/>
+      <input type="checkbox" name="banana" value="Banana">Bananas <br/>
+      <input type="checkbox" name="grapes" value="Grapes">Grapes <br/>
+      <input type="checkbox" name="orange" value="Orange">Oranges <br/>
+      <input type="checkbox" name="pear" value="Pear">Pears <br/>
+    </p>
+
+    <p>
+      <input type="submit" name="firstNameButton value">
+    </p>
+  </form>
+
+</body>
+</html>
