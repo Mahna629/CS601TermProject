@@ -7,35 +7,40 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="tpStyle.css">
   <script src="tpJavascript.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
 </head>
 
+<body>
 <header>
   <nav>
     <ul id="nav">
-      <li id="navList"><a href="index.html">Home</a></li>
-      <li id="navList"><a href="tpBio.html">Bio</a></li>
-      <li id="navList"><a href="tpProjects.html">Projects</a></li>
-      <li id="navList"><a href="tpInterests.html">Interests</a></li>
-      <li id="navList"><a href="tpGallery.html">Gallery</a></li>
-      <li id="navList"><a href="tpResume.html">Resume</a></li>
-      <li id="navList"><a href="tpContact.html" a class = "active">Contact</a></li>
+      <li class="navList"><a href="index.html">Home</a></li>
+      <li class="navList"><a href="tpBio.html">Bio</a></li>
+      <li class="navList"><a href="tpProjects.html">Projects</a></li>
+      <li class="navList"><a href="tpInterests.html">Interests</a></li>
+      <li class="navList"><a href="tpGallery.html">Gallery</a></li>
+      <li class="navList"><a href="tpResume.html">Resume</a></li>
+      <li class="navList"><a href="tpContact.html" class = "active">Contact</a></li>
     </ul>
   </nav>
 </header>
 
-<body>
   <section id="contTitle">
     <h1>Leave me a message!</h1>
   </section>
-
+  <!-- Currently, form links to a static HTML page -->
   <section class="formContainer">
-    <form action="contactInfo.php" method="post" novalidate onsubmit="return formValidation();">
+    <form action="test.html" method="post" id="contactForm">
 
       <p class="formLabels">Please enter your first name: (Required)</p> <span id="fNError"></span>
-      <input type="text" id="fname" name="firstname" placeholder="Your first name..." required>
+      <input type="text" id="fname" name="fname" minlength="2" placeholder="Your first name..." required>
 
       <p class="formLabels">Please enter your last name: (Required)</p>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..." required>
+      <input type="text" id="lname" name="lname" minlength="2" placeholder="Your last name..." required>
+
+      <p class="formLabels">Please enter your email: (Required)</p>
+      <input type="email" id="email" name="email" placeholder="Your email..." required>
 
       <p class="formLabels">What is your message: </p>
       <textarea id="additional" name="additional" placeholder="I think you're really cool..." style="height:200px"></textarea>
@@ -45,6 +50,9 @@
       </p>
     </form>
   </section>
-
-
+  <!-- form validation handled by the JQuery validation plugin -->
+  <script>
+  $("#contactForm").validate();
+  </script>
 </body>
+</html>

@@ -12,12 +12,12 @@
   border-radius: 0px 0px 10px 10px;
 }
 
-#navList {
+.navList {
   float: left;
   border-right: 1px solid white;
 }
 
-#navList a {
+.navList a {
   display: block;
   color: white;
   text-align: center;
@@ -25,12 +25,12 @@
   text-decoration: none;
 }
 
-#navList a:hover {
+.navList a:hover {
   background-color: MediumVioletRed;
 }
 
 a:visited {
-  color: MediumVioletRed;
+  color: white;
 }
 
 .active {
@@ -64,7 +64,7 @@ body {
   margin-left: 500px;
 }
 
-#acTitle {
+.acTitle {
   background-color: DeepSkyBlue;
   padding: 15px 32px;
   border-radius: 8px;
@@ -80,11 +80,11 @@ h4 {
   font-weight: normal;
 }
 
-#acTitle:hover {
+.acTitle:hover {
   background-color: MediumVioletRed;
 }
 
-#acData {
+.acData {
   color: white;
   padding-left: 32px;
   padding-right: 32px;
@@ -93,11 +93,11 @@ h4 {
   text-align: justify;
 }
 
-#examples {
+.examples {
   padding-bottom: 10px;
 }
 
-#exContent {
+.exContent {
   object-fit: cover;
   width: 100px;
   height: 100px;
@@ -131,7 +131,6 @@ h4 {
   opacity: .5;
   cursor: pointer;
   width: 1%;
-  padding: -10px;
   width: 200px;
   height: 200px;
   object-fit: cover;
@@ -192,7 +191,7 @@ h4 {
   text-align: center;
 }
 
-#prjButton {
+.prjButton {
   transition-duration: 0.4s;
   background-color: DeepSkyBlue;
   border: none;
@@ -209,12 +208,12 @@ h4 {
   box-shadow: 2px 2px 5px black;
 }
 
-#prjButton:hover, #prjButtonMisc:hover, #innerButton:hover {
+.prjButton:hover, .prjButtonMisc:hover, .innerButton:hover {
   background-color: MediumVioletRed;
   box-shadow: 2px 2px 5px black;
 }
 
-#prjButtonMisc {
+.prjButtonMisc {
   transition-duration: 0.4s;
   background-color: DeepSkyBlue;
   border: none;
@@ -265,7 +264,7 @@ h4 {
   border-radius: 8px;
 }
 
-#innerButton {
+.innerButton {
   transition-duration: 0.4s;
   background-color: DeepSkyBlue;
   border: none;
@@ -347,7 +346,7 @@ h4 {
   padding: 20px;
 }
 
-input[type=text], textarea {
+input[type=text], textarea, [type=email] {
   padding: 12px;
   width: 97%;
   border: 2px solid LightSlateGrey;
@@ -367,6 +366,7 @@ input[type=submit] {
   color: white;
   border: none;
   padding: 12px;
+  border-radius: 8px;
 }
 
 #contTitle {
@@ -379,7 +379,6 @@ input[type=submit] {
 .error {
   color: MediumVioletRed;
   font-weight: bold;
-  padding-right: 20px;
 }
 
 #hpPic {
@@ -403,4 +402,21 @@ input[type=submit] {
   margin-left: 610px;
   border-radius: 8px;
   box-shadow: 2px 2px 5px black;
+}
+
+#thankForm {
+  margin-top: 100px;
+  text-align: center;
+  background-color: DeepSkyBlue;
+  padding: 15px;
+  color: white;
+  width: 50%;
+  margin-left: 450px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px black;
+}
+
+.bioText {
+  font-weight: normal;
+  font-size: 12pt;
 }

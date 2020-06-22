@@ -9,21 +9,20 @@
   <script src="tpJavascript.js"></script>
 </head>
 
+<body>
 <header>
   <nav>
     <ul id="nav">
-      <li id="navList"><a href="index.html">Home</a></li>
-      <li id="navList"><a href="tpBio.html">Bio</a></li>
-      <li id="navList"><a href="tpProjects.html">Projects</a></li>
-      <li id="navList"><a href="tpInterests.html">Interests</a></li>
-      <li id="navList"><a href="tpGallery.html" a class = "active"7>Gallery</a></li>
-      <li id="navList"><a href="tpResume.html">Resume</a></li>
-      <li id="navList"><a href="tpContact.html" >Contact</a></li>
+      <li class="navList"><a href="index.html">Home</a></li>
+      <li class="navList"><a href="tpBio.html">Bio</a></li>
+      <li class="navList"><a href="tpProjects.html">Projects</a></li>
+      <li class="navList"><a href="tpInterests.html">Interests</a></li>
+      <li class="navList"><a href="tpGallery.html" class = "active">Gallery</a></li>
+      <li class="navList"><a href="tpResume.html">Resume</a></li>
+      <li class="navList"><a href="tpContact.html" >Contact</a></li>
     </ul>
   </nav>
 </header>
-
-<body>
 
   <section id="description">
     <h1>DND Character Gallery</h1>
@@ -31,6 +30,7 @@
       exclusively with characters from a Dungeons and Dragons campaign I play
       in. Here are some of them! (All of these were drawn using Clip Studio Paint
       on an iPad Pro.)</p>
+  </section>
 
 <section class="row">
   <section class="column">
@@ -55,20 +55,21 @@
     <img src="Content/Pyre.png" alt="Rillen Exfreet" onclick="galleryFunction(this);">
   </section>
   <section class="column">
-    <img src="Content/Querven Dorn.png" alt="Querven Dorn" onclick="galleryFunction(this);">
+    <img src="Content/Querven_Dorn.png" alt="Querven Dorn" onclick="galleryFunction(this);">
   </section>
   <section class="column">
     <img src="Content/Seilim.png" alt="Reus Seilim" onclick="galleryFunction(this);">
   </section>
 </section>
-
+<!-- hidden container for the expanded image. Image expanded using JavaScript found in tpJavascript.js --->
 <section class="container">
 
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
-  <img id="expandedImg" style="width:75%">
+  <img src=null id="expandedImg" style="width:75%" alt="expanded image">
 
   <div id="imgtext"></div>
 </section>
 
 </body>
+</html>

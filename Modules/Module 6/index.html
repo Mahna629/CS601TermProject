@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Michael Bruno | Module 6 | Vue </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="mod6style.css">
+</head>
+
+<body>
+  <div id="app">
+    <h1>{{ myTitle }}</h1>
+    <div class="imgText">
+      <img :src="myImage" @mouseenter="myImage = pic2" @mouseleave="myImage = pic1"  />
+      <p>{{ img1Desc }}</P>
+    </div>
+
+    <div class="imgText">
+      <img :src="myImage2" @mouseover="myImage2 = pic4" @mouseleave="myImage2 = pic3" />
+      <p>{{ img2Desc }}</P>
+    </div>
+    
+    <div class="imgText">
+      <img :src="myImage3" @mouseover="myImage3 = pic6" @mouseleave="myImage3 = pic5" />
+      <p>{{ img3Desc }}</p>
+    </div>
+
+    <div class="imgText">
+      <img :src="myImage4" @mouseover="myImage4 = pic8" @mouseleave="myImage4 = pic7" />
+      <p>{{ img4Desc }}</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+  <script>
+    var app = new Vue ({
+      el: '#app',
+      data: {
+          // text for dynamic titles and desciptions
+          myTitle: 'Images of me',
+          img1Desc: 'Me looking cool',
+          img2Desc: 'Me and my sister',
+          img3Desc: 'Me and my family at Disney world',
+          img4Desc: 'Me eating',
+
+          // the image elements on the screen
+          myImage: 'Content/me.jpg',
+          myImage2: 'Content/MandJ.jpg',
+          myImage3: 'Content/MDisOld.JPG',
+          myImage4: 'Content/MEatOld.JPG',
+
+          // references to the pictures themselves
+          pic1: 'Content/me.jpg',
+          pic2: 'Content/MGlasses.jpg',
+          pic3: 'Content/MandJ.jpg',
+          pic4: 'Content/MandJYoung.JPG',
+          pic5: 'Content/MDisOld.JPG',
+          pic6: 'Content/MDisYoung.JPG',
+          pic7: 'Content/MEatOld.JPG',
+          pic8: 'Content/MEatYoung.jpg'
+        }
+    })
+  </script>
+</body>
+</html>

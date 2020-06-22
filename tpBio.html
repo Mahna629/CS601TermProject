@@ -13,14 +13,14 @@
   </style>
   <script src="tpJavascript.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- JQuery function that replaces the text of a specific element with new text, depening on which element it is -->
   <script>
     $(function() {
       var prev;
       var WIF = ("I've lived my whole life in Fairport, NY, a suburb of Rochester." +
       " Perhaps the most notable thing about Fairport is the lift bridge that" +
       " crosses the Erie Canal which, as far as I know, is unique across the world" +
-      " in its angeled design." +
-      " ")
+      " in its angeled design.")
 
       var WIL = ("I did my undergradute education at Ithaca College, which" +
     " is located in Ithaca, NY. I majored in Screenwriting, and you can check" +
@@ -29,9 +29,9 @@
     " while at IC.")
 
       var WID = ("For the last few years I have worked as a Sales Associate at" +
-    " at Best Buy near my house. Specifically, I work in the Home Theater" +
+    " Best Buy near my house. Specifically, I work in the Home Theater" +
     " department, dealing with TVs and Audio equipment primarily, although" +
-    " since my store is on the smaller side that also includes networking" +
+    " since my store is on the smaller side that also includes networking," +
     " cameras, and appliances. I can't say it's something I'd want to do" +
     " forever, but I have definitely learned a lot there.")
 
@@ -62,36 +62,32 @@
   </script>
 </head>
 
+<body>
 <header>
   <nav>
     <ul id="nav">
-      <li id="navList"><a href="index.html">Home</a></li>
-      <li id="navList"><a href="tpBio.html" a class = "active">Bio</a></li>
-      <li id="navList"><a href="tpProjects.html">Projects</a></li>
-      <li id="navList"><a href="tpInterests.html">Interests</a></li>
-      <li id="navList"><a href="tpGallery.html">Gallery</a></li>
-      <li id="navList"><a href="tpResume.html">Resume</a></li>
-      <li id="navList"><a href="tpContact.html" >Contact</a></li>
+      <li class="navList"><a href="index.html">Home</a></li>
+      <li class="navList"><a href="tpBio.html" class = "active">Bio</a></li>
+      <li class="navList"><a href="tpProjects.html">Projects</a></li>
+      <li class="navList"><a href="tpInterests.html">Interests</a></li>
+      <li class="navList"><a href="tpGallery.html">Gallery</a></li>
+      <li class="navList"><a href="tpResume.html">Resume</a></li>
+      <li class="navList"><a href="tpContact.html" >Contact</a></li>
     </ul>
   </nav>
 </header>
 
-<body>
-
 <section class="grid-container">
-  <section class="grid-item1"><h2>Where I'm from
-    <h4><p class="bioText" id="bioText1">Hover to learn more!</p></h4>
-  </h2></section>
-  <section class="grid-item2"><h2>What I've learned (so far...)
-    <h4><p class="bioText" id="bioText2">Hover to learn more!</p></h4>
-  </h2></section>
-  <section class="grid-item3"><h2>What I do
-    <h4><p class="bioText" id="bioText3">Hover to learn more!</p></h4>
-  </h2></section>
-<section>
-
-
-
-
+  <section class="grid-item1"><h2>Where I'm from</h2>
+    <p class="bioText" id="bioText1">Hover to learn more!</p>
+  </section>
+  <section class="grid-item2"><h2>What I've learned (so far...)</h2>
+    <p class="bioText" id="bioText2">Hover to learn more!</p>
+  </section>
+  <section class="grid-item3"><h2>What I do</h2>
+    <p class="bioText" id="bioText3">Hover to learn more!</p>
+  </section>
+</section>
 
 </body>
+</html>
