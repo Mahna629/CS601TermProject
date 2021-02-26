@@ -1,0 +1,152 @@
+body {
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    background-color: ivory;
+}
+
+#nav {
+    list-style-type: none;
+    background-color: ivory;
+    margin: 0;
+    padding: 0; 
+    text-align: center;
+    font-size: 24px;
+  }
+
+.navList {
+    display: inline;
+}
+
+.navList a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.navList a:hover {
+    color: red;
+    transform:scale(1.5);
+    transition-duration: 200ms;
+    cursor: pointer;
+}
+
+.active {
+    font-size: 36px;
+}
+
+#headPic {
+    text-align: center;
+}
+
+#logo {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: -14px;
+    margin-top: -40px;
+    padding: 0;
+}
+
+#farmName {
+    font-size: 48px;
+    margin-bottom: -18px;
+}
+
+#farmAdd {
+    font-size: 18px;
+    padding-bottom: 2px;
+}
+
+#offerings {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#servicesOffered {
+    display: inline-flex;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#servicesOffered td, #servicesOffered th {
+    border: 1px solid black;
+    padding: 6px;
+}
+
+#servicesOffered tr:nth-child(even) {background-color: lightgray;}
+
+#servicesOffered tr:hover {background-color: lightslategrey;}
+
+#servicesOffered th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: red;
+}
+
+#productsOffered {
+    display: inline-flex;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#productsOffered td, #productsOffered th {
+    border: 1px solid black;
+    padding: 6px;
+}
+
+#productsOffered tr:nth-child(even) {background-color: lightgray;}
+
+#productsOffered tr:hover {background-color: lightslategrey;}
+
+#productsOffered th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: red;
+}
+
+#footer {
+    float:inline-end;
+    position: fixed;
+    clear: both;
+    bottom: 0;
+    width: 99%;
+    text-align: center;
+}
+
+#helpText, #aboutText {
+    flex: 33%;
+    text-align: center;
+}
+
+
+#helpLeftPic, #aboutLeftPic {
+    flex: 33%;
+    text-align: center;
+}
+
+#helpRightPic, #aboutRightPic {
+    flex: 33%;
+    text-align: center;
+}
+
+#HayPic1, #AboutPic1 {
+    width: 400px;
+    height: 300px;
+}
+
+#HayPic2, #AboutPic2 {
+    width: 400px;
+    height: 300px;
+}
+
+#helpTable, #aboutTable {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-wdith: 800px) {
+    .helpLeftPic, .helpRightPic, .helpText {
+        flex:100%;
+    }
+}
